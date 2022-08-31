@@ -13,5 +13,6 @@ def test_search_selene_positive(search_selene):
 
 
 def test_search_selene_negative(search_selene):
+
     browser.element('[id="search"]').should(have.no.text('harry potter'))
     print("Negative")
